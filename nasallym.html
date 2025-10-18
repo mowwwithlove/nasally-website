@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NASALLY MULTISERVICES</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feuille de style -->
+  <link rel="stylesheet" href="stylenasally.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo-link" href="#home">
+        <img src="images/logo.jpg" alt="Logo Nasally" class="logo-small" />
+        <span class="brand">NASALLY <span class="muted">MULTISERVICES</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#products">Produits</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content container">
+      <h1 class="site-title">NASALLY <span class="muted">MULTISERVICES</span></h1>
+      <p class="tagline">Cuisine, décoration, personnalisation et bien plus — Nasally s’occupe de tout 💕</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn primary">Découvrir nos produits</a>
+        <a href="#contact" class="btn ghost">Contact / Commander</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUITS -->
+  <section id="products" class="section-products container">
+    <h2>Nos produits</h2>
+    <p class="section-sub">Cliquez sur <strong>Commander sur WhatsApp</strong> pour envoyer une demande via WhatsApp.</p>
+
+    <div class="products-grid">
+      <article class="card">
+        <img src="images/prod-kit.jpg" alt="Kit beauté" class="card-img">
+        <div class="card-body">
+          <h3>Kit beauté</h3>
+          <p class="price">3 000 FCFA</p>
+          <p class="card-desc">Kit complet pour soin & beauté.</p>
+          <button class="btn whatsapp" 
+            onclick="window.location.href='https://wa.me/2250759647672?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Kit%20Beaut%C3%A9%20via%20Nasally%20Multiservices%20%F0%9F%8C%B8'">
+            Commander sur WhatsApp
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/prod-gourde.jpg" alt="Gourdes personnalisées" class="card-img">
+        <div class="card-body">
+          <h3>Gourdes personnalisées</h3>
+          <p class="price">À partir de — FCFA</p>
+          <p class="card-desc">Gourdes avec impression personnalisée (nom, logo...)</p>
+          <button class="btn whatsapp" 
+            onclick="window.location.href='https://wa.me/2250759647672?text=Bonjour%2C%20je%20souhaite%20commander%20une%20Gourde%20personnalis%C3%A9e%20via%20Nasally%20Multiservices%20%F0%9F%8C%B8'">
+            Commander sur WhatsApp
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/prod-deco.jpg" alt="Décoration" class="card-img">
+        <div class="card-body">
+          <h3>Décoration</h3>
+          <p class="price">À définir — FCFA</p>
+          <p class="card-desc">Décorations personnalisées pour fêtes et mariages.</p>
+          <button class="btn whatsapp" 
+            onclick="window.location.href='https://wa.me/2250759647672?text=Bonjour%2C%20je%20souhaite%20commander%20la%20D%C3%A9coration%20via%20Nasally%20Multiservices%20%F0%9F%8C%B8'">
+            Commander sur WhatsApp
+          </button>
+        </div>
+      </article>
+
+      <!-- Ajoute les autres produits ici -->
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact container">
+    <h2>Contact</h2>
+    <p>Pour commander directement, contacte-nous sur WhatsApp :</p>
+
+    <div class="contact-cards">
+      <div class="contact-card">
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/2250759647672" target="_blank">+225 07 59 64 76 72</a></p>
+        <p>
+          <button class="btn primary" 
+            onclick="window.location.href='https://wa.me/2250759647672?text=Bonjour%2C%20je%20souhaite%20envoyer%20une%20commande%20ou%20une%20question%20g%C3%A9n%C3%A9rale'">
+            Envoyer un message général
+          </button>
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Réseaux</h3>
+        <p>Instagram: <a href="https://www.instagram.com/nasally_multiservices/" target="_blank">@nasally_multiservices</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> NASALLY MULTISERVICES — Tous droits réservés</p>
+      <p class="small muted">Site réalisé avec ❤</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
